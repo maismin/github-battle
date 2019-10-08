@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import Popular from './components/Popular';
+
 // Component
 // State
 // Lifecycle
@@ -9,7 +11,11 @@ import './index.css';
 
 class App extends React.Component {
   render() {
-    return <div>Hello World!</div>;
+    return (
+      <div className="container">
+        <Popular />
+      </div>
+    );
   }
 }
 
