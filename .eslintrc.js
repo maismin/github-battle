@@ -21,5 +21,7 @@ module.exports = {
   rules: {
     'react/prefer-stateless-function': 'off',
     'react/jsx-filename-extension': 'off',
+    'react/state-in-constructor': 'off',
+    'react/jsx-fragments': 'off',
   },
 };
