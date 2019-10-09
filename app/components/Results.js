@@ -9,6 +9,7 @@ import {
 import PropTypes from 'prop-types';
 import { battle } from '../utils/api';
 import Card from './Card';
+import Loading from './Loading';
 
 function ProfileList({ profile }) {
   return (
@@ -83,7 +84,7 @@ class Results extends React.Component {
     const { winner, loser, error, loading } = this.state;
 
     if (loading) {
-      return <p>LOADING</p>;
+      return <Loading text="Battling" />;
     }
 
     if (error) {
